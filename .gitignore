@@ -1,4 +1,6 @@
 __pycache__/
+mokjin_rng/__pycache__/
+tests/__pycache__/
 *.py[cod]
 *$py.class
 *.pyo
