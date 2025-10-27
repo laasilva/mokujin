@@ -3,24 +3,43 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "my_algorithm"
-version = "0.1.0"
-description = "A weighted rarity RNG and provably fair loot selection library."
-authors = [{ name = laasilva", email = "laasilva@proton.me" }]
+name = "mokujin-rng"
+version = "1.0.0"
+description = "A provably fair, cryptographic random generation library for weighted loot and rarity systems."
 readme = "README.md"
-requires-python = ">=3.9"
-license = { text = "LGPL-3.0-or-later" }
-keywords = ["rng", "lootbox", "weighted", "random", "provably-fair", "cryptography"]
-
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+keywords = ["rng", "provably fair", "crypto", "lootbox", "random", "fairness"]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
-    "Operating System :: OS Independent",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Games/Entertainment :: Simulation",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Topic :: Games/Entertainment",
+    "Topic :: Security :: Cryptography",
+    "Operating System :: OS Independent"
 ]
 
-dependencies = []
+dependencies = [
+    # no external dependencies; stdlib only (hashlib, hmac, etc.)
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/mokujin_rng"
+Repository = "https://github.com/yourusername/mokujin_rng"
+Issues = "https://github.com/yourusername/mokujin_rng/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mokujin_rng*"]
+exclude = ["tests*", "examples*"]
+
+[tool.setuptools]
+package-dir = {"" = "."}
