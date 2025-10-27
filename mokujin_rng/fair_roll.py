@@ -2,7 +2,7 @@ from mokujin_rng.rarity import Rarity
 
 import hmac, hashlib
 
-from typing import List
+from typing import Tuple, Dict, List
 
 def hmac_hex(key: str, message: str) -> str:
     return hmac.new(key.encode(), message.encode(), hashlib.sha256).hexdigest()
