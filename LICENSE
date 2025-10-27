@@ -1,0 +1,42 @@
+mokujin_rng – Weighted Rarity RNG / Provably Fair Loot System
+Copyright (C) 2025 laasilva
+
+This library implements a weighted-rarity random-selection algorithm and an
+optional provably-fair variant based on cryptographic hashing.  It allows
+applications to define item rarities with weights, roll deterministic or
+verifiable outcomes, and fairly select items from configurable pools.
+
+-------------------------------------------------------------------------------
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc.
+<https://www.gnu.org/licenses/>
+
+Everyone is permitted to copy and distribute verbatim copies of this license
+document, but changing it is not allowed.
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GNU Lesser General Public License as published by the Free
+Software Foundation; either version 3 of the License, or (at your option) any
+later version.
+
+This library is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+details.
+
+You should have received a copy of the GNU Lesser General Public License along
+with this library.  If not, see <https://www.gnu.org/licenses/>.
+
+-------------------------------------------------------------------------------
+### Summary (informative, not legally binding)
+
+- You may **use** this library in open-source or proprietary software.
+- You may **modify** this library, but any distributed modifications must also
+  be licensed under **LGPL v3 or later**.
+- You may **link** this library (dynamically or via import) from closed-source
+  code without open-sourcing that code.
+- You must preserve this license notice and attribution in all copies.
+- The library is provided “as is,” without any warranty.
+-------------------------------------------------------------------------------
