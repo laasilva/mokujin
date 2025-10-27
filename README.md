@@ -30,7 +30,7 @@ A  complete,  ready-to-run  example  is  included  in [`example_usage.py`](./exa
 Run  it  directly  to  see  the  system  in  action:
 ```bash
 
-python example_usage.py
+python3 example_usage.py
 
 ```
 The example demonstrates how to:
